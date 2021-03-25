@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookmarker</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body id="body" onload="fetchBookmarks()">
+    <div class="container">
+      <div class="full">
+        <br>
+        <h2 id="title">Bookmark Website</h2>
+        <br>
+        <form id="myForm">
+          <div class="form-group">
+            <br>
+            <label>Site Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+            <br>
+          </div>
+          <div class="form-group">
+            <label>Site URL</label>
+            <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+            <br>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <br>
+      <h3 id="bottom-results">My bookmarks:<h3>
+      <br>    
+      <div id="bookmarksResults"></div>
+        </div>
+      </div>
+    </div> 
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
